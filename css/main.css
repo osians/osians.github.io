@@ -1,0 +1,74 @@
+.container{
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.teste{
+    border: 1px solid #000000;
+}
+.teste h3{
+    margin: 0;
+    border-bottom: 1px solid #000;
+    display: block;
+    text-align: center;
+    background-color: #ffd8a8;
+}
+.pergunta{
+    border-bottom: 1px solid #000;
+    padding: 10px;
+}
+.parseTable{
+    background-color: #ffd8a8;
+    width: 100%;
+}
+.parseTable tr th{
+    text-align: left;
+}
+.table_spam{
+    width: 30px;
+    display: inline-block;
+    border-bottom: 1px solid #111;
+    text-align: center;
+    font-weight: bold;
+}
+table.tableTransport, table.tableTransport td, table.tableTransport th {
+    border: 1px solid black;
+    text-align: center;
+}
+table.tableTransport {
+    width: 100%;
+    border-collapse: collapse;
+}
+.esconder{
+    display: none;
+}
+.exibir{
+    display: block;
+}
+div.resultados {}
+div.resultados > table {
+    width: 100%;
+    border-collapse: collapse;
+}
+div.resultados > table, div.resultados > table td, div.resultados > table th{
+    border: 1px solid black;
+}
+div.resultados > table td {
+    padding: 10px;
+}
+.resultado_visual{}
+.resultado_auditivo{}
+.resultado_cinestesico{}
+.resultado_digital{}
+.highlight{
+    background-color: beige;
+}
+.container-button-results{
+    display: block;
+    text-align: center;
+    margin-bottom: 36px;
+}
+.container-button-results > button {
+    width: 300px;
+    height: 35px;
+}

@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title></title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="icon" href="images/favicon.png"/>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class='teste' id="teste">
+        <h3>TESTE DO SISTEMA REPRESENTACIONAL COM INCLUSÃO DO CANAL DIGITAL</h3>
+        <div class="pergunta">
+            4 = A que melhor descreve você<br>
+            3 = A próxima melhor descrição<br>
+            2 = A próxima melhor<br>
+            1 = A que menos descreve você<br>
+        </div>
+
+        <div id='p1' class="pergunta">
+            <h4>1. Eu tomo decisões importantes baseado em:</h4>
+            <select name='p1_s1' onchange="changed(this);">
+                <option value="0">Escolher</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select> intuição<br>
+            <select name='p1_s2' onchange="changed(this);">
+                <option value="0">Escolher</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select> o que me soa melhor<br>
+            <select name='p1_s3' onchange="changed(this);">
+                <option value="0">Escolher</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select> o que me parece melhor<br>
+            <select name='p1_s4' onchange="changed(this);">
+                <option value="0">Escolher</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select> um estudo preciso e minucioso do assunto<br>
+        </div>
+
+        <div id="p2" class="pergunta">
+            <h4>2. Durante uma discussão eu sou mais influenciado por:</h4>
+            <select name='p2_s1' onchange="changed(this);">
+                <option value="0">Escolher</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select> o tom de voz da outra pessoa<br>
+            <select name='p2_s2' onchange="changed(this);">
+                <option value="0">Escolher</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select> se eu posso ou não ver o argumento da outra pessoa<br>
+            <select name='p2_s3' onchange="changed(this);">
+                <option value="0">Escolher</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select> a lógica do argumento da outra pessoa<br>
+            <select name='p2_s4' onchange="changed(this);">
+                <option value="0">Escolher</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select> se eu entro em contato ou não com os sentimentos reais do outro<br>
+        </div>
+
+        <div id="p3" class="pergunta">
+            <h4>3. Eu comunico mais facilmente o que se passa comigo:</h4>
+            <select name='p3_s1' onchange="changed(this);">
+                <option value="0">Escolher</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select> do modo como me visto e aparento<br>
+            <select name='p3_s2' onchange="changed(this);">
+                <option value="0">Escolher</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select> pelos sentimentos que compartilho<br>
+            <select name='p3_s3' onchange="changed(this);">
+                <option value="0">Escolher</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select> pelas palavras que escolho<br>
+            <select name='p3_s4' onchange="changed(this);">
+                <option value="0">Escolher</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select> pelo tom da minha voz<br>
+        </div>
+
+        <div id="p4" class="pergunta">
+            <h4>4. É muito fácil para mim:</h4>
+            <select name='p4_s1' onchange="changed(this);">
+                <option value="0">Escolher</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select> achar o volume e a sintonia ideais num sistema de som<br>
+            <select name='p4_s2' onchange="changed(this);">
+                <option value="0">Escolher</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select> selecionar o ponto mais relevante relativo a um assunto interessante<br>
+            <select name='p4_s3' onchange="changed(this);">
+                <option value="0">Escolher</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select> escolher os móveis mais confortáveis<br>
+            <select name='p4_s4' onchange="changed(this);">
+                <option value="0">Escolher</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select> escolher as combinações de cores mais ricas e atraentes<br>
+        </div>
+
+        <div id="p5" class="pergunta">
+            <h4>5. Eu me percebo assim:</h4>
+            <select name='p5_s1' onchange="changed(this);">
+                <option value="0">Escolher</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select> se estou muito em sintonia com os sons do ambiente<br>
+            <select name='p5_s2' onchange="changed(this);">
+                <option value="0">Escolher</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select> se sou muito capaz de raciocinar com fatos e dados novos<br>
+            <select name='p5_s3' onchange="changed(this);">
+                <option value="0">Escolher</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select> eu sou muito sensível à maneira como a roupa veste o meu corpo<br>
+            <select name='p5_s4' onchange="changed(this);">
+                <option value="0">Escolher</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select> eu respondo fortemente às cores e à aparência de uma sala<br>
+        </div>
+
+
+        <br><br>
+
+        <table class="parseTable">
+            <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+            </tr>
+            <tr>
+                <td><span class="table_spam" id="table_p1_s1"></span> C</td>
+                <td><span class="table_spam" id="table_p2_s1"></span> A</td>
+                <td><span class="table_spam" id="table_p3_s1"></span> V</td>
+                <td><span class="table_spam" id="table_p4_s1"></span> A</td>
+                <td><span class="table_spam" id="table_p5_s1"></span> A</td>
+            </tr>
+            <tr>
+                <td><span class="table_spam" id="table_p1_s2"></span> A</td>
+                <td><span class="table_spam" id="table_p2_s2"></span> V</td>
+                <td><span class="table_spam" id="table_p3_s2"></span> C</td>
+                <td><span class="table_spam" id="table_p4_s2"></span> D</td>
+                <td><span class="table_spam" id="table_p5_s2"></span> D</td>
+            </tr>
+            <tr>
+                <td><span class="table_spam" id="table_p1_s3"></span> V</td>
+                <td><span class="table_spam" id="table_p2_s3"></span> D</td>
+                <td><span class="table_spam" id="table_p3_s3"></span> D</td>
+                <td><span class="table_spam" id="table_p4_s3"></span> C</td>
+                <td><span class="table_spam" id="table_p5_s3"></span> C</td>
+            </tr>
+            <tr>
+                <td><span class="table_spam" id="table_p1_s4"></span> D</td>
+                <td><span class="table_spam" id="table_p2_s4"></span> C</td>
+                <td><span class="table_spam" id="table_p3_s4"></span> A</td>
+                <td><span class="table_spam" id="table_p4_s4"></span> V</td>
+                <td><span class="table_spam" id="table_p5_s4"></span> V</td>
+            </tr>
+        </table>
+
+        <h4>Transponha essas respostas para a grade abaixo e some os números associados com cada letra.</h4>
+
+        <table class="tableTransport">
+            <tr>
+                <th></th>
+                <th>V</th>
+                <th>C</th>
+                <th>A</th>
+                <th>D</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td class="totalv" id="p1_s3"></td>
+                <td class="totalc" id="p1_s1"></td>
+                <td class="totala" id="p1_s2"></td>
+                <td class="totald" id="p1_s4"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td class="totalv" id="p2_s2"></td>
+                <td class="totalc" id="p2_s4"></td>
+                <td class="totala" id="p2_s1"></td>
+                <td class="totald" id="p2_s3"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td class="totalv" id="p3_s1"></td>
+                <td class="totalc" id="p3_s2"></td>
+                <td class="totala" id="p3_s4"></td>
+                <td class="totald" id="p3_s3"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td class="totalv" id="p4_s4"></td>
+                <td class="totalc" id="p4_s3"></td>
+                <td class="totala" id="p4_s1"></td>
+                <td class="totald" id="p4_s2"></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td class="totalv" id="p5_s4"></td>
+                <td class="totalc" id="p5_s3"></td>
+                <td class="totala" id="p5_s1"></td>
+                <td class="totald" id="p5_s2"></td>
+            </tr>
+            <tr style="font-weight: bold; background-color: #ffd8a8">
+                <td>TOTAL x 2</td>
+                <td id="total_v"></td>
+                <td id="total_c"></td>
+                <td id="total_a"></td>
+                <td id="total_d"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>% Visual</td>
+                <td>% Cinestésico</td>
+                <td>% Auditivo</td>
+                <td>% Digital</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <br><br>
+    <div class="container-button-results">
+        <button id="btn_ver_resultados" onclick="javascript:visualizarResultados();" disabled="disabled">Ver resultados</button>
+    </div>
+
+    <div class="resultados esconder" id="resultados">
+        <h3>Interpretação dos resultados</h3>
+
+        <table>
+            <tr>
+                <th>Critérios</th>
+                <th class="resultado_visual">Visual</th>
+                <th class="resultado_cinestesico">Cinestésico</th>
+                <th class="resultado_auditivo">Auditivo</th>
+                <th class="resultado_digital">Digital</th>
+            </tr>
+            <tr>
+                <td><b>O sistema</b></td>
+                <td class="resultado_visual">O sistema visual é
+                    usado para nossas
+                    imagens internas,
+                    visualização,
+                    "sonhar acordado"
+                    e imaginação. Com
+                    uma preferência
+                    visual você
+                    pode ter interesse em
+                    desenhar, decorar
+                    interiores, moda,
+                    artes visuais, TV,
+                    filmes, fotografia
+                    etc.
+                </td>
+                <td class="resultado_cinestesico">O sistema cinestésico é feito de sensação de equilíbrio, de toque e de nossas sensações. Com a
+                    preferência cinestésica, você pode ter interesse em esportes, ginástica, dança, etc.
+                </td>
+                <td class="resultado_auditivo">O sistema auditivo
+                    é usado para ouvir
+                    sons internamente
+                    e ouvir as vozes de
+                    outras pessoas.
+                    Com uma
+                    preferência
+                    auditiva, você
+                    pode ter interesse
+                    em línguas,
+                    escrever, música,
+                    treinamentos etc.
+                </td>
+                <td class="resultado_digital">O sistema digital
+                    (ou auditivo
+                    digital) é a maneira
+                    de pensar usando
+                    palavras e falar
+                    consigo mesmo
+                    (diálogo interno).
+                    Quando o sistema
+                    representacional
+                    for o digital, você
+                    pensa basicamente
+                    conversando com
+                    você e tende a ser
+                    mais racional e
+                    lógico.
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>Comportamento</b></td>
+                <td class="resultado_visual">Faz uso da visão
+                    como meio de
+                    obter e reter as
+                    informações.
+                </td>
+                <td class="resultado_cinestesico">Abraçar, dançar,
+                    sentir as pessoas,
+                    sentir seu próprio
+                    corpo.
+                </td>
+                <td class="resultado_auditivo">Vale-se da audição
+                    para absorver
+                    informações.
+                </td>
+                <td class="resultado_digital">Pergunta muito,
+                    precisa de
+                    informações e
+                    fatos.
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>Pontos Fortes</b></td>
+                <td class="resultado_visual">Percebe coisas
+                    impares e que
+                    quase ninguém
+                    percebe no
+                    ambiente.
+                </td>
+                <td class="resultado_cinestesico">Habilidade para
+                    usar a
+                    coordenação
+                    motora grossa ou
+                    fina em esportes,
+                    artes cênicas ou
+                    plásticas no
+                    controle dos
+                    movimentos do
+                    corpo e na
+                    manipulação de
+                    objetos com
+                    destreza.
+                </td>
+                <td class="resultado_auditivo">Gosta de ouvir as
+                    pessoas.
+                </td>
+                <td class="resultado_digital">Capacidade
+                    analítica.
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>Como você aprende?</b></td>
+                <td class="resultado_visual">Vendo, sendo
+                    capaz de fazer
+                    uma imagem
+                    imediata
+                    do que está
+                    recebendo como
+                    informação.
+                </td>
+                <td class="resultado_cinestesico">Fazendo ou
+                    executando, sendo
+                    capaz de guiar-se
+                    pela experiência
+                    motora.
+                </td>
+                <td class="resultado_auditivo">Ouvindo, sendo
+                    capaz de montar
+                    uma história com
+                    a informação que
+                    está recebendo.
+                </td>
+                <td class="resultado_digital">Sendo capaz
+                    entender e montar
+                    uma história
+                    estruturada com a
+                    informação que
+                    está recebendo.
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>O que mais distrai sua atenção</b></td>
+                <td class="resultado_visual">Estímulos visuais em demasia ou conflitantes. Grande número de informações recebidas.</td>
+                <td class="resultado_cinestesico">Estímulos conflitantes visuais e/ou auditivos. Ser impedido de mover-se ou de fazer algo.</td>
+                <td class="resultado_auditivo">Ruídos de fundo.
+                    Estímulos
+                    auditivos dados
+                    rapidamente para
+                    serem convertidos
+                    em informações
+                    auditivas.
+                </td>
+                <td class="resultado_digital">Ruídos de fundo.
+                    Estímulos
+                    auditivos dados
+                    rapidamente para
+                    serem convertidos
+                    em informações
+                    auditivas.
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>Processamento de Informação</b></td>
+                <td class="resultado_visual">Tende a devanear
+                    quando está
+                    pensando. Pensa
+                    em ritmo rápido.
+                </td>
+                <td class="resultado_cinestesico">Pessoas que
+                    tendem a olhar
+                    para baixo quando
+                    estão
+                    pensando. Seus pensamentos
+                    ocorrem em um
+                    ritmo mais lento.
+                </td>
+                <td class="resultado_auditivo">Os olhos tendem a
+                    ficar fixos quando
+                    está pensando.
+                    Seus pensamentos
+                    ocorrem em uma velocidade
+                    moderada.
+                </td>
+                <td class="resultado_digital">Os olhos tendem a
+                    ficar fixos quando
+                    está pensando.
+                    Seus pensamentos
+                    ocorrem em uma velocidade
+                    moderada.
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>Como você interage com o ambiente</b></td>
+                <td class="resultado_visual">Verifica sempre o
+                    que está
+                    acontecendo ao
+                    seu redor.
+                </td>
+                <td class="resultado_cinestesico">Mais focalizado
+                    em si, bastante
+                    consciente do
+                    clima que o
+                    circunda; não
+                    parece consciente
+                    da atividade
+                    visual.
+                </td>
+                <td class="resultado_auditivo">Ouve o que está
+                    sendo dito a sua
+                    volta e não parece
+                    consciente de
+                    modificações no
+                    plano visual.
+                </td>
+                <td class="resultado_digital">Ouve entende, cria
+                    estruturas visuais e
+                    informacionais do
+                    que está sendo
+                    dito a sua volta e
+                    não parece
+                    consciente de
+                    modificações no
+                    plano visual,
+                    utilizando o
+                    diálogo interno.
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>Estilos de organização</b></td>
+                <td class="resultado_visual">A percepção é global; percebe o todo e, se necessario, decompõe em partes a percepção inicial.</td>
+                <td class="resultado_cinestesico">Organização gradual, criativa e divergente. Não há modelos definidos e estatísticos para
+                    aprendizagem. Chega a conclusões diferentes da maioria.
+                </td>
+                <td class="resultado_auditivo">Organizados; dependem de informações detalhadas e de instruções passo a passo. São orientados pela
+                    linguagem. Repetem para si o que devem memorizar.
+                </td>
+                <td class="resultado_digital">Organizados; dependem de informações detalhadas e de instruções passo a passo. São orientados pela
+                    linguagem. Repetem para si o que devem memorizar.
+                </td>
+            </tr>
+
+            <tr class="resultado_visual">
+                <td><b>Geral Visual</b></td>
+                <td colspan="4">Percebem as coisas como imagens e podem passar de um tema a outro facilmente.
+                    São capazes de fazer generalizações rapidamente inclusive partindo de uma
+                    informação escassa. Para as pessoas visuais, o mais importante é o “conceito geral”
+                    e podem aborrecer com as explicações detalhadas. Se dão bem em organizar as
+                    coisas já que visualizam o conceito geral rapidamente. As pessoas visuais
+                    gesticulam quando falam. Falam rápido e de maneira confusa já que tendem a
+                    seguir suas imagens interiores sem dar-se conta de que outros não vêem essa
+                    mesma imagem. Respondem brevemente às perguntas. As pessoas visuais têm
+                    memória fotográfica e frequentemente custam a repetir instruções orais. Preferem
+                    ler por eles mesmos que escutar a outra pessoa que as lê. As pessoas visuais
+                    podem ter problemas para debater e são um público impaciente. Gostam de
+                    escrever notas ou desenhar. As pessoas visuais se fixam no aspecto e valorizam o
+                    esmero, nem tanto a voz, a que não prestam atenção
+                </td>
+            </tr>
+
+            <tr class="resultado_cinestesico">
+                <td><b>Geral Cinestésico</b></td>
+                <td colspan="4">Percebem as coisas através do corpo e da experimentação. São muito intuitivos e
+                    valorizam especialmente o ambiente e a participação. Para pensar com clareza
+                    necessitam de movimento e atividade. Não concedem importância à ordem das
+                    coisas. As pessoas cinestésicas se mostram relaxadas ao falar, se movem e
+                    gesticulam. Falam devagar e sabem como utilizar as pausas. Como público, são
+                    impacientes porque preferem passar à ação. As pessoas cinestésicas preferem as
+                    atividades e o movimento e emprestam atenção ao desenvolvimento das mesmas.
+                    Do mesmo modo, requerem seu tempo para analisar o que se sente fazendo as
+                    coisas. Às pessoas cinestésicas gostam de tocar e aproximar-se de outros.
+                    Percebem facilmente o ambiente e o mobiliário incômodo assim como o frio e o
+                    calor. Ao falar, as pessoas cinestésicas não mantêm um grande contato visual com
+                    outros. Para descrever o que têm feito se concentram na ação. Aprendem melhor
+                    fazendo as coisas e recordando a sensação e a ação. Ocasionalmente caminham e
+                    gesticulam para recordar as coisas
+                </td>
+            </tr>
+
+            <tr class="resultado_auditivo">
+                <td><b>Geral Auditivo</b></td>
+                <td colspan="4">Gostam de escutar e contar histórias, seguem um procedimento lógico ao longo de
+                    cada história e se concentram em uma só coisa de uma vez. Não gostam que os
+                    temas sejam tratados de forma desordenada. Pessoas auditivas possuem um
+                    vocabulário amplo, se expressam com clareza e não gesticulam muito ao falar. As
+                    pessoas auditivas têm um discurso próprio: ouvem uma pergunta, repetem na
+                    cabeça e a respondem antes de responder em voz alta. Isto pode incomodar a As
+                    pessoas visuais e cinestésicas que tendem a ser mais rápidos. As pessoas auditivas
+                    aprendem escutando e prestam atenção à ênfase, às pausas e ao tom da voz. Uma
+                    pessoa auditiva desfruta do silêncio
+                </td>
+            </tr>
+
+            <tr class="resultado_digital">
+                <td><b>Geral Digital</b></td>
+                <td colspan="4">São pessoas que estão se mexendo, conversando, e ao mesmo tempo,
+                    conversando consigo mesmo. Tem tendência a realizarem constantemente a
+                    autoanálise e a ponderar consequências para cada decisão. Tem dificuldade em ler
+                    textos ou livros por um longo período de tempo e quando conseguem estão o
+                    tempo inteiro pensando no que farão no minuto seguinte.
+                    Quando começa a prestar atenção nos sinais, percebe que o auditivo digital está
+                    ouvindo e entendendo, mas ao mesmo tempo seu olhar se distancia em dados
+                    momentos. Em alguns momentos fica em silêncio, durante a negociação.
+                </td>
+            </tr>
+
+        </table>
+    </div>
+</div>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
